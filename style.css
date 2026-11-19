@@ -2,7 +2,7 @@
 :root{
     --primary-color: #3f51b5;           /* 主色 靛蓝 */
     --accent-color: #009688;            /* 强调色 蓝绿 */
-    --text-color: 212121;               /* 文字颜色 深灰 */
+    --text-color: #212121;               /* 文字颜色 深灰 */
     --background-color: #fafafa;        /* 背景色 浅灰 */
     --card-background-color: #ffffff;   /* 卡片背景色 白色 */
     --border: #e0e0e0;                  /* 边框颜色 浅灰 */
