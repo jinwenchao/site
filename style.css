@@ -58,3 +58,22 @@ a{
 .nav-link:hover, .nav-link.active{
     background-color: rgba(255, 255, 255, .18); /* 设置悬停背景色 */
 }
+/* ==================  主域Hero区 ==================  */
+.hero{
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));  /* 设置背景色 */
+    color: #ffffff;                        /* 设置文字颜色 */
+    text-align: center;                      /* 设置文字居中 */
+    padding: 120px 20px;                      /* 设置内边距 */
+}
+.hero h1{
+    font-size: 2.2rem;                       /* 设置标题字体大小 */
+    font-weight: bold;                        /* 设置标题加粗 */
+    margin-bottom: 12px;                     /* 设置下边距 */
+    color: #ffffff;                        /* 设置标题颜色 */
+}
+.hero p{
+    font-size: 1.1rem;                       /* 设置段落字体大小 */
+    opacity: .9;                             /* 设置透明度 */
+    margin-bottom: 28px;                     /* 设置下边距 */
+    color: #ffffff;                        /* 设置段落颜色 */
+}
