@@ -1,0 +1,60 @@
+/* ================== 全局变量(配色方案) ================== */
+:root{
+    --primary-color: #3f51b5;           /* 主色 靛蓝 */
+    --accent-color: #009688;            /* 强调色 蓝绿 */
+    --text-color: 212121;               /* 文字颜色 深灰 */
+    --background-color: #fafafa;        /* 背景色 浅灰 */
+    --card-background-color: #ffffff;   /* 卡片背景色 白色 */
+    --border: #e0e0e0;                  /* 边框颜色 浅灰 */
+    --box-shadow: 0 2px 8px rgba(0, 0,0, .08); /* 阴影效果 */
+}
+*{
+    margin: 0;               /* 清除默认外边距 */
+    padding: 0;              /* 清除默认内边距 */
+    box-sizing: border-box;  /* 设置盒模型为 border-box */
+}
+body{
+    font-family: 'Arial', sans-serif;          /* 设置字体 */
+    background-color: var(--background-color); /* 设置背景色 */
+    color: var(--text-color);                  /* 设置文字颜色 */
+    line-height: 1.6;                          /* 设置行高 */
+}
+a{
+    text-decoration: none; /* 去掉链接下划线 */
+    color: inherit;        /* 继承父元素的文字颜色 */
+}
+/* ==================  顶部导航栏 ==================  */
+.navbar{
+    background-color: var(--primary-color);  /* 设置背景色 */
+    position: sticky;                        /* 固定在顶部 */
+    top: 0;                                  /* 距离顶部的距离 */
+    z-index: 100;                            /* 设置层级 */
+    box-shadow: var(--box-shadow);           /* 设置阴影效果 */
+}
+.nav-inner{
+    display: flex;                           /* 使用弹性布局 */
+    justify-content: space-between;          /* 两端对齐 */
+    align-items: center;                     /* 垂直居中 */
+    padding: 0 20px;                         /* 设置内边距 */
+    height: 60px;                            /* 设置高度 */
+    max-width: 1100px;                       /* 设置最大宽度 */
+    margin: 0 auto;                          /* 居中 */
+}
+.logo{
+    font-size: 1.25rem;                       /* 设置字体大小 */
+    color: #ffffff;                           /* 设置文字颜色 */
+    font-weight: bold;                        /* 设置字体加粗 */
+}
+.nav-menu{
+    display: flex;                           /* 使用弹性布局 */
+    gap: 8px;                                /* 设置间距 */
+}
+.nav-link{
+    color: #ffffff;                          /* 设置文字颜色 */
+    padding: 8px 12px;                       /* 设置内边距 */
+    border-radius: 4px;                      /* 设置圆角 */
+    transition: background-color .3s;        /* 设置过渡效果 */
+}
+.nav-link:hover, .nav-link.active{
+    background-color: rgba(255, 255, 255, .18); /* 设置悬停背景色 */
+}
